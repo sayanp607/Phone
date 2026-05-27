@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "95164077692",
+    "project_id": "remote-device-control-e36fd",
+    "storage_bucket": "remote-device-control-e36fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95164077692:android:cbc9e53601fe34ce561bf9",
+        "android_client_info": {
+          "package_name": "com.remotedevicecontrol.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwp8tRKgfU0p3wY2MGcXZ9b6UCmnD-g1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
