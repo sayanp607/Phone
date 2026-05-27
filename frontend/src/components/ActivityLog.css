@@ -1,0 +1,138 @@
+.activity-log {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-log h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.empty-log {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.log-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.log-entry {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.log-entry:hover {
+  background: #f5f5f5;
+  transform: translateX(4px);
+}
+
+.log-entry.ring {
+  border-left-color: #667eea;
+}
+
+.log-entry.flashlight_on,
+.log-entry.flashlight_off {
+  border-left-color: #f093fb;
+}
+
+.log-entry.location_request {
+  border-left-color: #fa709a;
+}
+
+.log-entry.set_alarm {
+  border-left-color: #30cfd0;
+}
+
+.log-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.log-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.log-action {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.log-time {
+  color: #999;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.log-details {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+  word-wrap: break-word;
+}
+
+.log-status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.log-status.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.log-status.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.log-status.pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+/* Scrollbar styling */
+.log-entries::-webkit-scrollbar {
+  width: 6px;
+}
+
+.log-entries::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+.log-entries::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.log-entries::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
